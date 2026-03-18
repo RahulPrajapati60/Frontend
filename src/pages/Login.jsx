@@ -52,7 +52,7 @@ function Login() {
 
       // Success
       login(data.token, data.user);
-      localStorage.setItem('token', res.data.token);
+      localStorage.setItem('token', data.token);
 
       // store user data (depends on your backend response)
       if (data.user) {
