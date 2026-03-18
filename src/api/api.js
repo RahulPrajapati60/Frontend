@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://backend-1-d3lc.onrender.com/api';
 
 const api = {
   // Register
