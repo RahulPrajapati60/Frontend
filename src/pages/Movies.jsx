@@ -11,7 +11,7 @@ function Movies() {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/movies');
+        const res = await axios.get('https://backend-1-d3lc.onrender.com/api/movies');
         if (res.data.success) {
           setMovies(res.data.movies);
         } else {
