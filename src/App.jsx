@@ -94,17 +94,24 @@ function App() {
 
       {/* Main Content  Routes */}
       <Routes>
-      
+        <Route path="/" element={<Home />} />
+        <Route path="/movies" element={<Movies />} />
+        <Route path="/theaters" element={<Theaters />} />
+        <Route path="/releases" element={<Releases />} />
+        <Route path="/live-shows" element={<LiveShows />} />
+        <Route path="/contactus" element={<ContactUs />} />
+
+      {/* Auth Routes */}
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
 
         {/* Protected routes – login */}
-        <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
+        {/* <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
         <Route path="/movies" element={<ProtectedRoute><Movies /></ProtectedRoute>} />
         <Route path="/theaters" element={<ProtectedRoute><Theaters /></ProtectedRoute>} />
         <Route path="/releases" element={<ProtectedRoute><Releases /></ProtectedRoute>} />
         <Route path="/live-shows" element={<ProtectedRoute><LiveShows /></ProtectedRoute>} />
-        <Route path="/contactus" element={<ProtectedRoute><ContactUs /></ProtectedRoute>} />
+        <Route path="/contactus" element={<ProtectedRoute><ContactUs /></ProtectedRoute>} /> */}
 
 
 
